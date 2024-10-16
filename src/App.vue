@@ -1,30 +1,21 @@
 <script setup lang="ts">
-  let imgUrl="https://i.pinimg.com/control/564x/62/d5/e7/62d5e7673f1ce5043bd266f6dbba99c8.jpg" 
-  let test = true
-
-  function testFunc(a:number){
-  console.log("da vao", a)
-  test = !test
-  console.log("gia tri cua test", test)
-}
-  function enterKey(){
-    console.log("enter key")
-  }
+// import Bai1 from "./components/Bai1.vue"
+// import Bai2 from "./components/Bai2.vue"
+// import Bai3 from "./components/Bai3.vue"
+// import Bai4 from "./components/Bai4.vue"
+// import Bai5 from "./components/Bai5.vue"
+import Bai6 from "./components/Bai6.vue"
 </script>
 
 <template>
-  <img :src="imgUrl" alt="Khong the tai hinh anh">
-  <img v-bind:src="imgUrl" alt="">
-  <br>
-  <h1 :class="test ? 'test' : ''"> Hello</h1>
-  <button v-on:click="testFunc(5)">Change Color</button>
-
-  <input @keydown.enter="enterKey" type="text">
-
+  <Bai1></Bai1>
+  <Bai2></Bai2>
+  <Bai3></Bai3>
+  <Bai4></Bai4>
+  <Bai5></Bai5>
+  <Bai6></Bai6>
 </template>
 
 <style scoped lang ="scss">
-  .test{
-    color: yellow;
-    }
+ 
 </style>
